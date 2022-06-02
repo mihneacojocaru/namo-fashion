@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/5.0.1/css/bootstrap.min.css">
+    <title>NAMO - Fashion Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 start-0 w-100">
+        <div class="container">
+            <a href="#" class="navbar-brand d-lg-none namo">NAMO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-2 flex-column" id="navbarContent">
+                <div class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row w-100">
+                    <form class="d-flex">
+                        <input type="search" class="form-control me-2" placeholder="Produkte suchen">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                    </form>
+                    <a href="#" class="navbar-brand d-none d-lg-block namo">NAMO</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link mx-2">
+                                <ion-icon name="person"></ion-icon>
+                                Einloggen
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link mx-2">
+                                <ion-icon name="basket"></ion-icon>
+                                Einkaufstasche
+                            </a>
+                            <span class="badge rounded-pill bg-secondary">0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-block w-100">
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center pt-3">
+                        <li class="nav-item mx-2">
+                            <a href="#newArrivals" class="nav-link">
+                                Kleidung
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#" class="nav-link">
+                                Schuhe
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#" class="nav-link">
+                                Accessories
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#" class="nav-link">
+                                Über uns</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#" class="nav-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#" class="nav-link">
+                                Kontakt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container position-relative">
+             
+        <div class="row py-5 g-5">
+            <div class="col-12 col-lg-6">
+                <img src="./img/clothes/img4.jpeg" alt="article" class="m-1 w-100 sliderMainImage" data-bs-target="modal" data-bs-toggle="#imageModal">
+                <div>
+                    <img src="./img/clothes/img4.jpeg" width="60" class="m-1 sliderThumb" alt="coat">
+                    <img src="./img/clothes/img4.5.jpeg" width="60" class="m-1 sliderThumb" alt="coat">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 id="productName">Keeper Coat</h2>
+                <small class="text-muted">Art.Nr.: 10806241</small>
+                <h4 class="my-4"> <small id="price">789</small> €</h4>
+                <label for="selectSize" class="text-muted">Size:</label>
+                <select name="selectSize" class="form-select" id="size">
+                    <option selected>Größe wählen</option>
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                    <option value="4">XL</option>
+                </select>
+                <div class="d-grid my-4">
+                    <button class="btn btn-lg btn-dark" type="button" id="bagBtn">Hinzufügen</button>
+                </div>
+                <section id="infos">
+                    <div class="accordion accordion-flush" id="infos">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" >
+                                <button class="accordion-button" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                                    <strong>Details</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" 
+                                 class="accordion-collapse collapse show" data-bs-parent="#infos" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque aliquam ea deserunt alias aut, aspernatur debitis, perferendis suscipit doloremque labore assumenda voluptas praesentium quasi impedit ratione culpa fugiat voluptatem.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <strong>Lieferung und Bezahlung</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#infos">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa corporis minus accusamus dolores nemo esse, voluptatum quasi. <br/><br/> Iusto, voluptas. Ducimus praesentium, incidunt aperiam a dicta doloremque officia quam nemo, quaerat hic inventore dignissimos laboriosam laudantium rerum debitis ratione velit atque assumenda. Placeat quis culpa iste id deserunt maxime vel.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <strong>Produktinformation</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#infos">
+                                <div class="accordion-body">
+                                     Necessitatibus libero voluptatibus ut officia similique culpa eaque beatae nemo mollitia accusantium aut consequatur pariatur expedita, magnam reiciendis iste provident sequi ipsum cum ex, alias impedit sint exercitationem? Obcaecati maiores sed dolore. Labore, aperiam soluta nesciunt expedita officia explicabo et eligendi!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <strong>Passgenauigkeit</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#infos">
+                                <div class="accordion-body">
+                                     Architecto ullam, ipsum ex hic, optio explicabo obcaecati reprehenderit facilis non illo, vero facere! Vel, minus eum. Doloribus aliquam libero laudantium harum rerum esse nisi optio, porro dolore. Ipsum esse beatae nulla officiis rerum, vitae eos possimus similique, pariatur ratione consequuntur, numquam deserunt consequatur! Suscipit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <h2 class="display-6 py-5 text-center">
+            Ausgewählte Favoriten
+        </h2>
+
+        <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row my-5">
+            <div class="card m-2">
+                <a href="#">
+                    <img src="./img/clothes/img1.jpeg" class="card-img-top" height="300" alt="Product">
+                </a>
+                <div class="card-body">
+                    <p class="card-text fw-bold">
+                        Tara Dress
+                    </p>
+                    <small class="text-secondary"> 249 €</small>
+                </div>
+            </div>
+            <div class="card m-2">
+                <a href="#">
+                    <img src="./img/clothes/img2.jpeg" class="card-img-top" height="300" alt="Product">
+                </a>
+                <div class="card-body">
+                    <p class="card-text fw-bold">
+                        Naminal Shirt
+                    </p>
+                    <small class="text-secondary"> 49 €</small>
+                </div>
+            </div>
+            <div class="card m-2">
+                <a href="#">
+                    <img src="./img/clothes/img3.jpeg" class="card-img-top" height="300" alt="Product">
+                </a>
+                <div class="card-body">
+                    <p class="card-text fw-bold">
+                        Uma Coat
+                    </p>
+                    <small class="text-secondary"> 499 €</small>
+                </div>
+            </div>
+            <div class="card m-2">
+                <a href="#">
+                    <img src="./img/clothes/img4.jpeg" class="card-img-top" height="300" alt="Product">
+                </a>
+                <div class="card-body">
+                    <p class="card-text fw-bold">
+                        Keeper Coat
+                    </p>
+                    <small class="text-secondary"> 789 €</small>
+                </div>
+            </div>
+        </div>
+
+        <section class="custom-section my-5 mx-auto py 5">
+            <h2>Newsletter abonieren</h2>
+            <form class="d-flex my-4">
+                <input type="search" class="form-control me-2" placeholder="E-mail"/>
+                <button class="btn btn-outline-dark" type="submit">Abonieren</button>
+            </form>
+        </section>
+
+        <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
+            <ul class="nav flex-column">
+                <li class="fw-bold nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        Produkte
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Kleidung
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Schuhe
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Accessories
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column">
+                <li class="fw-bold nav-item text-dark">
+                    <a href="#" class="nav-link text-dark">
+                        Hilfe
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Einkaufsführer
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Produktpflege
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Kontakt
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Nachhaltigkeit
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column">
+                <li class="fw-bold nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        Presse
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Unsere Geschäfte
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Impressum
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Karriere
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Presse
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column">
+                <li class="fw-bold nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        Nutzungsbedingungen
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Allgemeine Geschäftsbedingungen
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Datenschutz-Bestimmungen
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">
+                        Cookies-Einstellungen
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <div class="w-100 p-3 text-center">
+        <p class="copyright">
+            &copy; 2022 <a class="text-decoration-none" href="https://mihneacojocaru.github.io/">Mihnea Cojocaru</a>.
+            All Right Reserved
+        </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
